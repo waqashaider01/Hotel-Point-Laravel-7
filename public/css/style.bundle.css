@@ -88538,6 +88538,56 @@ body {
 } */
 
 
-.apexcharts-text{
-fill: rgb(27, 197, 189) !important;
+.apexcharts-text {
+    fill: rgb(27, 197, 189) !important;
+}
+
+.custom_date_style {
+    height: 39px;
+    margin-top: 2px;
+    border: 1px solid #ccc !important;
+    color: #555 !important;
+    padding: 0 30px;
+    border-radius: 0.42rem !important;
+    border-color: #1BC5BD !important;
+}
+
+.custom_date_style:focus {
+    box-shadow: 0 0 5px #43d1af !important;
+}
+
+.filter_btn {
+    background: transparent !important;
+    border-radius: 0.42rem !important;
+    color: black !important;
+    border-color: #1BC5BD !important;
+}
+
+.filter_btn:hover {
+    background-color: #1BC5BD !important;
+    color: white !important;
+}
+
+.filter_btn:hover .print_icon {
+    background-color: #1BC5BD !important;
+    color: white !important;
+}
+
+.all_filter_field {
+    border-radius: 0.42rem !important;
+    border-color: #1BC5BD !important;
+}
+
+a, .print_icon {
+    color: #1BC5BD !important;
+}
+
+a, .print_icon:hover {
+    color: white !important;
+}
+
+.daterangepicker .drp-calendar td.active {
+
+    background-color: #1BC5BD !important;
+
 }

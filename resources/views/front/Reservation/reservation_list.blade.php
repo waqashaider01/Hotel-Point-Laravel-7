@@ -1,12 +1,24 @@
 @extends('layouts.master')
 @section('content')
+<script>
+    
+$('input[name="dates"]').daterangepicker();
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <div>
         <x-table title='Reservation List' tableClasses="table reservation-table table-striped table-bordered">
             <x-slot name="header">
                 <div class="row">
                     <div class="col-md-10 form-group d-flex d-print-none">
-                        <form action="{{ route('reservations-list') }}" method="get" class="mr-5">
-                            <table>
+ <form action="{{ route('reservations-list') }}" method="get" class="mr-5">                     
+
+
+                  <input type="text" name="daterange" class="custom_date_style" value="01/01/2018 - 01/15/2018" />
+                    
+                            {{-- <table>
                                 <tbody>
                                     <tr>
                                         <input type="hidden" name="status" value="{{ request()->query('status', null) }}">
@@ -47,7 +59,7 @@
                                             <td colspan="4" class="text-danger">{{ $message }}</td>
                                         </tr>
                                     @enderror
-                            </table>
+                            </table> --}}
                         </form>
                         <form action="{{ route('reservations-list') }}" method="get" class="ml-5">
                             <table>
@@ -59,7 +71,7 @@
                                             value="{{ request()->query('to_date', null) }}">
                                         <td class="align-middle">
                                             <div class="form-style-6 reservation-input my-0 p-0">
-                                                <select name="status" class="mb-0" style="min-width: 150px;">
+                                                <select name="status" class="mb-0 all_filter_field" style="min-width: 150px;">
                                                     <option value="">All</option>
                                                     @foreach (['New', 'Confirmed', 'Arrived', 'Modified', 'Cancelled', 'CheckedOut'] as $item)
                                                         <option value="{{ $item }}"
@@ -71,7 +83,7 @@
                                         </td>
                                         <td class="align-middle">
                                             <div class="d-print-none pl-2">
-                                                <button type="submit" class="btn btn-success rounded-0">
+                                                <button type="submit" class="btn btn-success rounded-0 filter_btn">
                                                     Filter
                                                 </button>
                                             </div>
@@ -88,8 +100,8 @@
                     </div>
                     <div class="col-md-2 d-print-none">
                         <a href="javascript:if(window.print)window.print()" type="button"
-                            class="float-right btn btn-primary m-3">
-                            <i class="fa fa-print"></i> Print
+                            class="float-right btn btn-primary m-3 filter_btn">
+                            <i class="fa fa-print print_icon"></i> Print
                         </a>
                     </div>
                     <div class="col d-none d-print-block">
@@ -296,6 +308,15 @@
             </div>
         @endforeach
     </div>
+    <script>
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'right'
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+</script>
 @endsection
 
 @push('scripts')
