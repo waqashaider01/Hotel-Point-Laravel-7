@@ -88563,6 +88563,10 @@ body {
     border-color: #1BC5BD !important;
 }
 
+.filter_btn:focus {
+    box-shadow: 0 0 5px #43d1af !important;
+}
+
 .filter_btn:hover {
     background-color: #1BC5BD !important;
     color: white !important;
@@ -88578,11 +88582,11 @@ body {
     border-color: #1BC5BD !important;
 }
 
-a, .print_icon {
+.print_icon {
     color: #1BC5BD !important;
 }
 
-a, .print_icon:hover {
+.print_icon:hover {
     color: white !important;
 }
 

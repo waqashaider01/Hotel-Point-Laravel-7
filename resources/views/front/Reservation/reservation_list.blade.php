@@ -101,7 +101,7 @@ $('input[name="dates"]').daterangepicker();
                     <div class="col-md-2 d-print-none">
                         <a href="javascript:if(window.print)window.print()" type="button"
                             class="float-right btn btn-primary m-3 filter_btn">
-                            <i class="fa fa-print print_icon"></i> Print
+                            <i class="fa fa-print print_icon mr-2"></i> Print
                         </a>
                     </div>
                     <div class="col d-none d-print-block">
