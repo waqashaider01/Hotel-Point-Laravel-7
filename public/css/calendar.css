@@ -1,0 +1,622 @@
+a{
+    text-decoration:none;
+    color:black;
+}
+a:hover{
+    color:black !important;
+}
+.month_title{
+    position: sticky;
+    font position: sticky;
+    font-size:15px !important;
+    font-weight:bold;
+    width: 100%;
+    margin: 0px;
+    /*height: 50%;*/
+    left: 0;
+}
+.gradient-bg{
+    background: linear-gradient(to right, #06beb6, #48b1bf);
+    transition: all .3s ease-in-out;
+}
+.gradient-bg:hover{
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+
+}
+.gradient-icon{
+    font-size:10px!important;
+    background: linear-gradient(to right, #06beb6, #48b1bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-icon:hover{
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* ScrollBar Edit */
+
+.card-body::-webkit-scrollbar {
+    height: 9px;
+}
+
+/* Track */
+.card-body::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+.card-body::-webkit-scrollbar-thumb {
+    background: #3699FF;
+    border-radius: 25px;
+}
+
+/* Handle on hover */
+.card-body::-webkit-scrollbar-thumb:hover {
+    background:#3699FF;
+}
+
+.modal2 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal3 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+.modal4 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+.ratesmodal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 100;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+.stopsellmodal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 100;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+.rates-content {
+    background-color: #fefefe;
+    margin: 40vh;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    margin-top: 10% !important;
+    margin-left: 40% !important;
+    border-radius: 10px;
+}
+
+.stopsell-content {
+    background-color: #F5F7F9;
+
+    width: 40%;
+    margin-top: 5% !important;
+    margin-left: 30% !important;
+    border-radius: 5px;
+}
+.daily-content{
+
+    background-color: #F5F7F9;
+
+    width: 25%;
+    margin-top: 5% !important;
+    margin-left: 37% !important;
+    border-radius: 5px;
+}
+.movreservation-content {
+    background-color: #F5F7F9;
+
+    width: 50%;
+    margin-top: 5% !important;
+    margin-left: 25% !important;
+    border-radius: 5px;
+}
+.splitreservation-content{
+    background-color: #F5F7F9;
+
+    width: 60%;
+    margin-top: 2% !important;
+    margin-left: 20% !important;
+    border-radius: 5px;
+}
+
+
+.editBtn {
+    outline: none !important;
+    border: none !important;
+    font-size: 22px !important;
+}
+
+/* Modal Content/Box */
+
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 40vh;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    margin-top: 12% !important;
+    border-radius: 10px;
+}
+.modal-content3 {
+    background-color: #fefefe;
+    margin: 40vh;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    margin-top: 12% !important;
+    margin-left: 450px;
+    border-radius: 10px;
+}
+.modal-content4 {
+    background-color: #fefefe;
+    margin: 40vh;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    margin-top: 10% !important;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close3 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close4 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close2:hover,
+.close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close3:hover,
+.close3:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close4:hover,
+.close4:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*.big-date {
+  font-size: 18px !important;
+  margin: 15px;
+}*/
+
+.reservdiv{
+
+    border-radius: 10px !important;
+
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+
+    text-indent: 1em;
+    text-align: left;
+    margin-top:-6px !important;
+    margin-left: -8px;
+
+}
+
+#calendar {
+    /*border: 2px solid;*/
+    border: 3px solid #09BDB6;
+    overflow: scroll;
+    empty-cells: show;
+    border-collapse: separate;
+}
+
+
+#calendar button {
+    background: none !important;
+}
+
+.table-gray {
+    background-color: #cccccc !important;
+}
+
+.btn-cell {
+    display: flex;
+}
+.tooltip .tooltip-inner{
+    border: 3px solid #fff;
+
+
+    background-color: #fff;
+    text-align: left;
+    max-width: 270px !important;
+    width: auto;
+    min-width: 50px;
+    border-radius:15px;
+    border-style: solid;
+    height: auto;
+    padding-bottom: 0;
+    margin-bottom:  0;
+}
+
+
+
+.tooltip .tooltip-arrow{
+    border-top-color: #4adede;
+}
+
+
+#tabbody td{
+    min-width: 35px !important;
+    max-width: 35px !important;
+    width: 35px !important;
+    min-height:15px !important;
+    max-height: 15px !important;
+    height: 15px !important;
+    white-space: nowrap;
+    overflow: visible;
+    font-size: 10px;
+    text-align: center;
+}
+#calendar th{
+    min-width: 36px ;
+    max-width: 36px ;
+    width: 36px ;
+    min-height: : 30px ;
+    max-height: : 30px ;
+    height: : 30px ;
+    background-color:white !important;
+    color: black;
+    border:1px solid black;
+    font-weight: bold !important;
+    font-size: 10px;
+}
+
+.tipcontainer{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    padding: 0px;
+    margin-bottom: -10px;
+    grid-column-gap: 5px;
+
+}
+.tipcontainers{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding: 0px;
+    margin-bottom: -10px;
+    grid-column-gap: 5px;
+
+}
+.restcontainers{
+    display: grid;
+    grid-template-columns: 5fr 5fr 1fr;
+    padding: 0px;
+    margin-bottom: -10px;
+    grid-column-gap: 5px;
+
+}
+
+.ratecontainers{
+    display: grid;
+    /*grid-template-columns: 5fr 5fr 1fr;*/
+    padding: 0px;
+    margin-bottom: -10px;
+    /*grid-column-gap: 5px;*/
+
+}
+
+.sticky_col{
+
+    position: sticky;
+    position: -webkit-sticky;
+    min-width: 150px !important;
+    max-width: 150px !important;
+    width: 150px !important;
+    background-color:white !important;
+    /* background-color: #3699FF;*/
+    color: black;
+}
+.stick{
+
+    color: black;
+    background-color:white !important;
+    margin-top:-15px !important;
+    margin-bottom:-15px !important;
+    padding:-10px !important;
+    font-size: 15px !important;
+}
+.typespan{
+    background-color: teal;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+.restrictspan{
+    color: red;
+    margin-left: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    /*width: 30%!important;*/
+}
+
+.mycstm{
+    cursor: pointer;
+    border-radius: 50px;
+    width:50px !important;
+    height:25px !important;
+    font-size:15px !important;
+    margin-left:2px;
+    margin-right:2px;
+    padding:8px;
+    color:white !important;
+    text-fill-color:white !important;
+}
+.mycstm1{
+    border-radius: 50px;
+
+    width:130px !important;
+    height:25px !important;
+    font-size:15px !important;
+    padding:0px !important;
+    margin-left:2px;
+    margin-right:2px;
+    color:white !important;
+    text-fill-color:white !important;
+}
+.forcalendar{
+    margin-top:20px !important;
+}
+.weekend{
+    background: #f1f1f1;
+}
+.mystylishdivs{
+
+    border: 3px solid #c7e2ff!important;;
+    line-height:2em!important;
+
+    background: linear-gradient(-90deg, #f3f3dc , #AFEEEE, #dce7f3)!important;
+    background-size: 600% 400% !important;
+
+
+    border:2px solid blue;
+    width:400px;
+    height:Auto;
+    margin:5px;
+    border-radius: 15px;
+}
+
+.ratesstylishdivs{
+
+    border: 3px solid #c7e2ff!important;;
+    line-height:2em!important;
+
+    background: linear-gradient(-90deg, #f3f3dc , #AFEEEE, #dce7f3)!important;
+    background-size: 600% 400% !important;
+
+
+    border:2px solid blue;
+    width:100%;
+    height:auto;
+    margin:5px;
+    border-radius: 15px;
+}
+.mystylishdivshead{
+
+
+
+    border: 3px solid #c7e2ff;
+    line-height:2em; margin: 10px 0 10px; margin-top:2em; margin-bottom:2em;
+
+    background: linear-gradient(-45deg,#4dcbce,  #f3f3dc , #AFEEEE, #dce7f3)!important;
+    background-size: 600% 400%;
+
+
+
+
+    background: linear-gradient(to bottom, hsl(236, 50%, 98%), hsl(236, 50%, 94%))
+    /* border:2px solid black !important;*/
+    margin-top:-60px !important;
+    margin-left:42px;
+    margin-right:42px;
+
+
+    border-radius: 5px;
+}
+label{
+    margin-left:10px;
+}
+.form-group{
+    margin:10px !important;
+}
+.fas{
+    margin-top:-5px !important;
+    padding:0px;
+    margin-bottom:5px !important;
+}
+.bi{
+    color: black;
+    font-size: 12px;
+}
+
+/* ..........toggle button style..........*/
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 22px;
+    width: 47px;
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 18px;
+    width: 20px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.checkbox:checked + .label {
+    background-color: #8bc34a;
+}
+.checkbox:not(:checked) + .label {
+    background-color: #f44336;
+}
+
+.reservation-label{
+    width: 0;
+    height: 0;
+    border-top: 20px solid #fb607f;
+    border-left: 20px solid transparent;
+
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+}
+
+.reservation-text{
+    position: absolute;
+    left: 0;
+
+}
+
+.infbtn{
+    border:1px solid #D5D8DC;
+    border-radius:2px;
+    padding:3px 10px 3px 10px;
+    font-size:14px;
+    margin-right:5px;
+
+}
+.infbtn i{
+    font-size:20px;
+    color:#ABB2B9;
+}

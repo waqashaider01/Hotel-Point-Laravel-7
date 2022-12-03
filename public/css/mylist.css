@@ -1,0 +1,433 @@
+html,body {
+  height: 100%;
+}
+
+.listcard{
+	width:100%;
+	background-color:#F5F7F9;
+	border-radius:5px;
+	padding:2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom:10px;
+
+}
+ .th{
+	background-color:#F5F7F9;
+	text-decoration:none !important;
+	text-align:left;
+	font-size:14px;
+}
+.table{
+	width:100%;
+	background-color:#F5F7F9 !important;
+}
+ .mytr{
+	background-color:white !important;
+	margin-bottom:5px !important;
+	border-radius:2px;
+	text-align:left;
+	height:40px;
+	font-size:14px;
+	padding-top:10px !important;
+	border:1px solid #e8e8e8;
+	/*font-weight:bold;*/
+}
+
+.idcolor{
+	color:#688DD0 !important;
+	font-weight:bold;
+}
+.disabledtr{
+	background-color:#F8F8F8 !important;
+	margin-bottom:5px !important;
+	border-radius:2px;
+	text-align:left;
+	height:40px;
+	font-size:14px;
+	padding-top:10px !important;
+	border:1px solid #e8e8e8;
+	/*font-weight:bold;*/
+}
+
+.disabledcolor{
+	color:red !important;
+	font-weight:bold;
+}
+.buttonslist{
+	margin-bottom:-50% !important;
+}
+
+
+
+/* input forms style */
+.form-style-6{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 100%;
+	margin: 10px auto;
+	padding: 5px;
+	background: rgba(0,0,0,0);
+}
+.form-style-6 h1{
+	background: #43D1AF;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="month"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 input[type="password"],
+.form-style-6 textarea,
+.form-style-6 select
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	min-width:225px;
+	background: #fff;
+	margin-bottom: 4%;
+	height:40px !important;
+	border: 1px solid #ccc;
+	border-radius:2px;
+	padding-left: 3%;
+	padding-right: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="month"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 input[type="password"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+	box-shadow: 0 0 5px #43D1AF;
+	border: 1px solid #43D1AF;
+}
+.form-style-6 label{
+	color: #43D1AF;
+}
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #43D1AF;
+	border-bottom: 2px solid #30C29E;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+	background: #2EBC99;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.custom-selects {
+	font-size: 24px !important; background-color:transparent; border:none; color:#fff;
+  }
+
+
+  .custom-select-option{
+	 background:#fff;
+	 color:#000;
+	 padding:10px !important;
+	 font-size:20px;
+	 border-radius: 2px !important;
+  }
+  .custom-select-disabled{
+	background:#dfdfdf;
+	color:#000 !important;
+	padding:10px !important;
+	font-size:20px;
+	border-radius: 2px !important;
+ }
+ .triangle-up-green {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid green;
+}
+.triangle-down-red {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid red;
+}
+.triangle-down-blue {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #688DD0;
+}
+.bold-black{
+	color:#000 !important;
+	font-weight:bold;
+}
+.checkcell{
+	color: green;
+}
+.uncheck{
+	color: red;
+}
+.thin-bottom-border{
+	border-top: transparent;
+	border-bottom: 5px solid #F5F7F9;
+}
+.no-border{
+	border-bottom: 5px solid #F5F7F9;
+}
+
+.headingdata{
+	min-width:200px !important;
+	max-width:200px !important;
+	width: 200px !important;
+	text-align:left !important;
+	font-size: 12px !important;
+
+}
+.budget-total-data{
+	color:#688DD0 ;
+	font-weight: bold;
+}
+#hotelbudget td, th{
+	font-size: 12px !important;
+}
+.littlestyle:focus{
+	box-shadow: 0 0 5px #43D1AF;
+	border: 1px solid #43D1AF !important;
+}
+.littlestyle{
+	max-width:30px !important;
+	min-width:30px !important;
+	min-height:25px !important;
+	border: 1px solid #43D1AF !important;
+}
+.infbtn{
+	border:2px solid #48BBBE;
+	border-radius:5px;
+	padding:5px;
+	font-size:14px;
+	margin-right:5px;
+	float: right;
+
+}
+.infbtn i{
+	font-size:20px;
+	color:#ABB2B9;
+}
+
+.display-none {
+    display: none;
+}
+#verification_form {
+	max-width: 70%;
+	margin: 25px auto 0;
+  }
+
+  #verification_form input {
+	margin: 0 5px;
+	font-size: 20px;
+	border: solid 1px #ccc;
+	outline: none;
+	width: 100%;
+	transition: all .2s ease-in-out;
+	border-radius: 3px;
+  }
+
+  #verification_form input:selection {
+	background: transparent;
+  }
+
+  #verification_form button {
+	margin-top: 30px;
+	width: 40%;
+	margin-right: 10px;
+
+  }
+
+  #verify_logo {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+  }
+
+  .time {
+
+	margin: 0 auto;
+	padding: 8px 30px;
+	background-color: #333;
+	border-radius: 50px;
+	color: #fff;
+  }
+
+  #resend_btn {
+	cursor: pointer;
+  }
+
+  /*....custom progress bar*/
+
+  #progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	color: lightgrey;
+	width: 100%;
+  }
+
+  #progressbar .active {
+	color: #000000
+  }
+
+  #progressbar li {
+	list-style-type: none;
+	font-size: 12px;
+	width: 25%;
+	float: left;
+	position: relative;
+	text-align: center;
+  }
+
+  #progressbar #verify_user:before {
+	content: "1";
+	font-weight:900;
+  }
+
+  #progressbar #process_payment:before {
+	content: "2";
+	font-weight:900;
+  }
+
+  #progressbar #finish:before {
+	content: "3";
+	font-weight:900;
+  }
+
+  #progressbar li:before {
+	width: 50px;
+	height: 50px;
+	line-height: 45px;
+	display: block;
+	font-size: 18px;
+	color: #ffffff;
+	background: lightgray;
+	border-radius: 50%;
+	margin: 0 auto 10px auto;
+	padding: 2px
+  }
+
+
+  #progressbar li.active:before,
+  #progressbar li.active:after {
+	background: skyblue
+  }
+  .firststep{
+   width:30%;
+  }
+  .secondstep{
+   width:60%;
+  }
+  .thirdstep{
+   width:100%;
+  }
+
+  .connecting-line {
+
+	position: absolute;
+	width: 90%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	margin-top: 25px;
+	z-index: 0;
+  }
+
+  .checkmark__circle {
+	stroke-dasharray: 216;
+	stroke-dashoffset: 216;
+	stroke-width: 2;
+	stroke-miterlimit: 10;
+	stroke: #7ac142;
+	fill: none;
+	animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+  }
+
+  .checkmark {
+	width: 106px;
+	height: 106px;
+	border-radius: 50%;
+	display: block;
+	stroke-width: 2;
+	stroke: #fff;
+	stroke-miterlimit: 10;
+	margin: 10% auto;
+	box-shadow: inset 0px 0px 0px #7ac142;
+	animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+  }
+
+  .checkmark__check {
+	transform-origin: 50% 50%;
+	stroke-dasharray: 98;
+	stroke-dashoffset: 98;
+	animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+  }
+
+  @keyframes stroke {
+	100% {
+	  stroke-dashoffset: 0;
+	}
+  }
+
+  @keyframes scale {
+
+	0%,
+	100% {
+	  transform: none;
+	}
+
+	50% {
+	  transform: scale3d(1.1, 1.1, 1);
+	}
+  }
+
+  @keyframes fill {
+	100% {
+	  box-shadow: inset 0px 0px 0px 80px #7ac142;
+	}
+  }

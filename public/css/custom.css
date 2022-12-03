@@ -1,0 +1,1403 @@
+/* Fix for body & Nav */
+#kt_body,
+#kt_body.modal-open {
+    position: relative;
+    padding: 75px 0 !important;
+    padding-bottom: 200px !important;
+    height: auto !important;
+}
+
+.navigation-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9000;
+}
+
+.modal-dialog {
+    margin-top: 75px !important;
+    margin-bottom: 75px !important;
+}
+
+/* Checkbox & Radio designs */
+.form-check-custom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 1.6rem;
+    padding-left: 1.5em;
+    margin-bottom: 0.25rem;
+}
+
+.form-check-custom .form-check-label {
+    font-size: 1.2rem;
+    color: #000;
+    margin-left: 5px;
+}
+
+.form-check-custom .form-check-input[type="checkbox"],
+.form-check-custom .form-check-input[type="radio"] {
+    display: inline-block;
+    position: static;
+}
+
+.form-check-custom .form-check-input[type="checkbox"],
+.form-check-custom .form-check-input[type="radio"] {
+    width: 1.25em;
+    height: 1.25em;
+    margin-top: 0.3em;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+}
+
+.form-check-custom .form-check-input[type="checkbox"] {
+    border-radius: 0.25em;
+}
+
+.form-check-custom .form-check-input[type="checkbox"]:active {
+    filter: brightness(90%);
+}
+
+.form-check-custom .form-check-input[type="checkbox"]:focus {
+    border-color: #1266f1;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(18, 102, 241, 0.25);
+}
+
+.form-check-custom .form-check-input[type="checkbox"]:checked {
+    background-color: #1266f1;
+}
+
+.form-check-custom .form-check-input[type="checkbox"]:checked[type="checkbox"] {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3 6-6'/%3E%3C/svg%3E");
+}
+
+.form-check-custom .form-check-input[type="checkbox"]:checked[type="radio"] {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.form-check-custom .form-check-input[type="checkbox"]:indeterminate {
+    background-color: #1266f1;
+    border-color: #757575;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3E%3C/svg%3E");
+}
+
+.form-check-custom .form-check-input[type="checkbox"]:disabled {
+    pointer-events: none;
+    filter: none;
+    opacity: 0.5;
+}
+
+.form-check-custom .form-check-input[type="checkbox"]:disabled~.form-check-label,
+.form-check-custom .form-check-input[type="checkbox"][disabled]~.form-check-label {
+    opacity: 0.5;
+}
+
+/* Daily Cashier */
+.row-custom {
+    border: 1px solid #ddd;
+    box-shadow: 1px 5px 11px 1px #b5b5c3;
+    margin-top: 2em;
+}
+
+.row-custom h2 {
+    padding: 5%;
+    background: #3699ff;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.custom_seperator {
+    border-bottom-width: 10px !important;
+}
+
+.row-custom h1 {
+    padding: 5%;
+    text-decoration: underline;
+}
+
+.tr_custom {
+    border: solid 2px #1bc5bd;
+}
+
+.tr_custom:hover {
+    color: white !important;
+    background-color: #1bc5bd !important;
+}
+
+.bg-inf {
+    background-color: #bee5eb !important;
+}
+
+/* Vat-In-Out */
+.header_row {
+    background: #3699ff !important;
+    color: white !important;
+}
+
+#summary .row-summary {
+    width: inherit;
+}
+
+#summary .row-summary:not(:first-of-type) {
+    border-top: 2px solid aliceblue;
+}
+
+.table-warning {
+    text-align: center !important;
+}
+
+#head_date th {
+    border: unset !important;
+}
+
+.bg-warning-2 {
+    background-color: #f1a616b0 !important;
+}
+
+.bg-gradient-dark-blue {
+    height: 163px !important;
+    background: #2c3e50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #4ca1af);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.button-gradient {
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #4ca1af);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: transform 0.4s;
+}
+
+.gradient-blue-dark {
+    height: 163px !important;
+    background: #2c3e50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ca1af, #2c3e50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ca1af, #2c3e50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.custom-height {
+    height: 80% !important;
+}
+
+/* #chart svg {
+    margin-top: -40px !important;
+} */
+
+.custom-bar {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.fixed-width-row .col-md-2 {
+    flex: 1 0 14.666667% !important;
+    max-width: 14.666667% !important;
+}
+
+.button-gradient:hover {
+    transform: translateY(-10px);
+    transition: transform 0.4s;
+}
+
+.invalid-input-data {
+    color: red;
+    font-size: 12px;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid #1bc5bd !important;
+    box-shadow: 0 0 10px #1bc5bd !important;
+}
+
+.modify {
+    cursor: pointer;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    color: white !important;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: green;
+    color: white !important;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px white;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.switch input:checked~span:after {
+    opacity: 1;
+    color: #28a745;
+    background-color: #ffffff;
+}
+
+.switch input:empty~span:before {
+    opacity: 1;
+    color: #28a745;
+    background-color: #ffffff;
+}
+
+.switch input:empty~span:before {
+    background-color: #ff0018;
+    opacity: 0;
+}
+
+.button {
+    background-color: #4caf50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    color: #1bc5bd;
+}
+
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    border-radius: 5px;
+}
+
+.header-div {
+    max-height: 100% !important;
+    background-color: #48bbbe;
+    margin-top: -2.1% !important;
+    color: white;
+    margin-bottom: 15px;
+    margin-left: -2.1% !important;
+    margin-right: -2.1%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+/*Irfan Styles*/
+#kt_footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 9000;
+}
+
+span.switcher {
+    position: relative;
+    width: 100px;
+    height: 25px;
+    border-radius: 13px;
+    margin: 10px 0;
+}
+
+span.switcher input {
+    appearance: none;
+    position: relative;
+    width: 100px;
+    height: 25px;
+    border-radius: 13px;
+    background-color: #48bbbe;
+    outline: none;
+    font-family: "Oswald", sans-serif;
+}
+
+span.switcher input:before,
+body span.switcher input:after {
+    z-index: 2;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+span.switcher input:before {
+    bottom: 5px;
+    content: "ON";
+    left: 10px;
+}
+
+span.switcher input:after {
+    bottom: 5px;
+    content: "OFF";
+    right: 10px;
+}
+
+span.switcher label {
+    z-index: 1;
+    position: absolute;
+    top: 3px;
+    bottom: -1px;
+    border-radius: 10px;
+}
+
+span.switcher.switcher-1 input {
+    transition: 0.25s -0.1s;
+}
+
+span.switcher.switcher-1 input:checked {
+    background-color: #fff;
+}
+
+span.switcher.switcher-1 input:checked:before {
+    color: #fff;
+    transition: color 0.5s 0.2s;
+}
+
+span.switcher.switcher-1 input:checked:after {
+    color: #ccc;
+    transition: color 0.5s;
+}
+
+span.switcher.switcher-1 input:checked+label {
+    left: 5px;
+    right: 50px;
+    background: #48bbbe;
+    transition: left 0.5s, right 0.4s 0.2s;
+}
+
+span.switcher.switcher-1 input:not(:checked) {
+    background: #48bbbe;
+    transition: background 0.5s -0.1s;
+}
+
+span.switcher.switcher-1 input:not(:checked):before {
+    color: #ccc;
+    transition: color 0.5s;
+}
+
+span.switcher.switcher-1 input:not(:checked):after {
+    color: #48bbbe;
+    transition: color 0.5s 0.2s;
+}
+
+span.switcher.switcher-1 input:not(:checked)+label {
+    left: 50px;
+    right: 5px;
+    background: #fff;
+    transition: left 0.4s 0.2s, right 0.5s, background 0.35s -0.1s;
+}
+
+span.switcher.switcher-2 {
+    overflow: hidden;
+}
+
+span.switcher.switcher-2 input {
+    transition: background-color 0s 0.5s;
+}
+
+span.switcher.switcher-2 input:before {
+    color: #48bbbe;
+}
+
+span.switcher.switcher-2 input:after {
+    color: #fff;
+}
+
+span.switcher.switcher-2 input:checked {
+    background-color: #fff;
+}
+
+span.switcher.switcher-2 input:checked+label {
+    background: #fff;
+    animation: turn-on 0.5s ease-out;
+}
+
+@keyframes turn-on {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+span.switcher.switcher-2 input:not(:checked) {
+    background: #48bbbe;
+}
+
+span.switcher.switcher-2 input:not(:checked)+label {
+    background: #48bbbe;
+    animation: turn-off 0.5s ease-out;
+}
+
+@keyframes turn-off {
+    0% {
+        right: 100%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+
+span.switcher.switcher-2 label {
+    top: 0px;
+    width: 100px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+.modal_footer_submit {
+    background-color: #48bbbe;
+    padding: 2px 12px;
+    color: white;
+    border-radius: 2px;
+    border: none;
+}
+
+.modal_footer_cancel {
+    background-color: red;
+    border: none !important;
+    padding: 2px 12px;
+    color: white;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+span.switcher {
+    position: relative;
+    width: 100px;
+    height: 25px;
+    border-radius: 13px;
+    margin: 10px 0;
+}
+
+span.switcher input {
+    appearance: none;
+    position: relative;
+    width: 100px;
+    height: 25px;
+    border-radius: 13px;
+    background-color: #48bbbe;
+    outline: none;
+    font-family: "Oswald", sans-serif;
+}
+
+span.switcher input:before,
+body span.switcher input:after {
+    z-index: 2;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+span.switcher input:before {
+    bottom: 5px;
+    content: "ON";
+    left: 10px;
+}
+
+span.switcher input:after {
+    bottom: 5px;
+    content: "OFF";
+    right: 10px;
+}
+
+span.switcher label {
+    z-index: 1;
+    position: absolute;
+    top: 3px;
+    bottom: -1px;
+    border-radius: 10px;
+}
+
+span.switcher.switcher-1 input {
+    transition: 0.25s -0.1s;
+}
+
+span.switcher.switcher-1 input:checked {
+    background-color: #fff;
+}
+
+span.switcher.switcher-1 input:checked:before {
+    color: #fff;
+    transition: color 0.5s 0.2s;
+}
+
+span.switcher.switcher-1 input:checked:after {
+    color: #ccc;
+    transition: color 0.5s;
+}
+
+span.switcher.switcher-1 input:checked+label {
+    left: 5px;
+    right: 50px;
+    background: #48bbbe;
+    transition: left 0.5s, right 0.4s 0.2s;
+}
+
+span.switcher.switcher-1 input:not(:checked) {
+    background: #48bbbe;
+    transition: background 0.5s -0.1s;
+}
+
+span.switcher.switcher-1 input:not(:checked):before {
+    color: #ccc;
+    transition: color 0.5s;
+}
+
+span.switcher.switcher-1 input:not(:checked):after {
+    color: #48bbbe;
+    transition: color 0.5s 0.2s;
+}
+
+span.switcher.switcher-1 input:not(:checked)+label {
+    left: 50px;
+    right: 5px;
+    background: #fff;
+    transition: left 0.4s 0.2s, right 0.5s, background 0.35s -0.1s;
+}
+
+span.switcher.switcher-2 {
+    overflow: hidden;
+}
+
+span.switcher.switcher-2 input {
+    transition: background-color 0s 0.5s;
+}
+
+span.switcher.switcher-2 input:before {
+    color: #48bbbe;
+}
+
+span.switcher.switcher-2 input:after {
+    color: #fff;
+}
+
+span.switcher.switcher-2 input:checked {
+    background-color: #fff;
+}
+
+span.switcher.switcher-2 input:checked+label {
+    background: #fff;
+    animation: turn-on 0.5s ease-out;
+}
+
+@keyframes turn-on {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+span.switcher.switcher-2 input:not(:checked) {
+    background: #48bbbe;
+}
+
+span.switcher.switcher-2 input:not(:checked)+label {
+    background: #48bbbe;
+    animation: turn-off 0.5s ease-out;
+}
+
+@keyframes turn-off {
+    0% {
+        right: 100%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+
+span.switcher.switcher-2 label {
+    top: 0px;
+    width: 100px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+.form-control2 {
+    border-radius: 3px;
+    height: 30px;
+    width: 170px !important;
+    border: 1px solid gray;
+    background-color: #f5f7f9 !important;
+}
+
+.form-control3 {
+    border-radius: 3px;
+    height: 30px;
+    width: 50px !important;
+    border: 1px solid gray;
+    background-color: #f5f7f9 !important;
+}
+
+.form-control4 {
+    border-radius: 3px;
+    height: 30px;
+    width: 116px !important;
+    border: 1px solid gray;
+    background-color: #f5f7f9 !important;
+}
+
+select,
+input {}
+
+.tab-container {
+    text-align: center;
+}
+
+#myTab {
+    display: inline-flex;
+    margin: 0px;
+    font-size: 0.8em;
+    background-color: transparent;
+}
+
+#myTab .nav-link {
+    margin: 0 5px 5px 0;
+    border-radius: 5px;
+    background: #f1f1f1;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    color: #000 !important;
+    opacity: 0.8;
+    display: block;
+}
+
+#nav-tabContent {
+    margin-top: 0px !important;
+    /*background-color: white;*/
+}
+
+.nav-link.active {
+    /*margin-bottom: 0!important;*/
+    padding-bottom: 15px !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    /*color: #2b82d9 !important;*/
+    opacity: 1 !important;
+    background-color: #fff !important;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.infocard {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    /* margin-bottom: 10%; */
+}
+
+label {
+    color: #d5d8dc;
+    font-size: 12px;
+}
+
+span {
+    font-size: 14px;
+}
+
+.infbtn {
+    border: 1px solid #d5d8dc;
+    border-radius: 7px;
+    padding: 3px 10px 3px 10px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.infbtn i {
+    font-size: 20px;
+    color: #abb2b9;
+}
+
+i {
+    font-size: 20px;
+    color: #abb2b9;
+}
+
+.togglegreen {
+    color: white;
+    background-color: #3f8843;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+hr {
+    border: 1px solid #d5d8dc;
+    margin-left: -2%;
+    margin-right: -2%;
+}
+
+.darker {
+    background-color: #eaecee;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.lighter {
+    border: 1px solid #d5d8dc;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black !important;
+}
+
+.paymentdisplay {
+    display: block !important;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-control2 {
+    border-radius: 3px;
+    height: 30px;
+    width: 170px !important;
+    border: 1px solid gray;
+    background-color: #f5f7f9 !important;
+}
+
+.tax_settings {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+}
+
+/*start reservation styles*/
+.reservation_info {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    border-radius: 5px;
+}
+
+hr {
+    border: 1px solid #d5d8dc;
+    margin-left: -2%;
+    margin-right: -2%;
+}
+
+.littlestyle {
+    max-width: 170px !important;
+    min-width: 170px !important;
+}
+
+.infbtn {
+    border: 1px solid #d5d8dc;
+    border-radius: 2px;
+    padding: 3px 10px 3px 10px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.infbtn i {
+    font-size: 20px;
+    color: #abb2b9;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black !important;
+}
+
+/*End*/
+/*daily cashier*/
+.cashier-info-card {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+/*service styles*/
+.extrachargecard {
+    border: 1px solid #b8bbbe;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.headerstyle {
+    border: 1px solid #b8bbbe;
+    background-color: #d5d8dc;
+    border-radius: 7px 7px 0px 0px;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    min-height: 50px;
+    max-height: 50px;
+    position: relative;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.service-input {
+    border-radius: 15px;
+    border-top: 2px solid #b8bbbe;
+    border-right: 2px solid #b8bbbe;
+    border-left: 2px solid #b8bbbe;
+    border-bottom: 1px solid #b8bbbe;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-left: 3px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+select,
+.spandiv {
+    background-color: #e6e6e6;
+}
+
+.choosedservices {
+    border: 1px solid #b8bbbe;
+    background-color: #f5f4f4;
+    border-radius: 7px;
+    min-height: 50px;
+    max-height: 50px;
+    padding: 10px;
+}
+
+.invoicediv,
+.totaldiv {
+    border: 1px solid #b8bbbe;
+    background-color: #f9faf3;
+    padding-bottom: 10px;
+}
+
+.spandiv {
+    margin-right: 5px;
+}
+
+.totaldiv {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.buttonsdiv {
+    border: 1px solid #b8bbbe;
+    background-color: #eff5f5;
+    padding: 10px;
+    height: 50px;
+
+    border-radius: 0px 0px 7px 7px;
+}
+
+.servicebuttons {
+    color: white;
+    width: 100px !important;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.servicechoosed {
+    background-color: #f9faf3;
+    padding: 10px;
+    overflow-x: hidden;
+    margin-bottom: 5px;
+}
+
+.serviceinput1 {
+    border-radius: 15px;
+    border-top: 2px solid #b8bbbe;
+    border-right: 2px solid #b8bbbe;
+    border-left: 2px solid #b8bbbe;
+    border-bottom: 1px solid #b8bbbe;
+    text-align: center;
+    background-color: #e6e6e6;
+}
+
+.fa-times-circle {
+    color: #f10404;
+}
+
+.choosedservicesnew {
+    background-color: #f5f4f4;
+    min-height: auto;
+    max-height: auto;
+    padding: 10px;
+    overflow-y: auto;
+    border-radius: 7px;
+    overflow-x: hidden;
+}
+
+hr {
+    border: 1px dashed #b8bbbe;
+}
+
+.serviceunits {
+    border-radius: 50%;
+    border-top: 2px solid #b8bbbe;
+    border-right: 2px solid #b8bbbe;
+    border-left: 2px solid #b8bbbe;
+    border-bottom: 1px solid #b8bbbe;
+    text-align: center;
+    background-color: #e6e6e6;
+}
+
+.headingserv {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.servicesasbtns {
+    border: 1px solid #b8bbbe;
+    background-color: #f5f4f4;
+    overflow-y: auto;
+    width: 100%;
+    max-height: 624px;
+    min-height: 624px;
+    border-radius: 0px 0px 7px 7px;
+    overflow-x: hidden;
+}
+
+.service_btn {
+    border: 1px solid #b8bbbe;
+    height: 70px;
+    width: 25%;
+    text-align: center;
+    padding: 25px;
+    color: black;
+}
+
+.infbtn {
+    border: 1px solid #b8bbbe;
+    font-size: 15px;
+    padding: 10px;
+    margin-right: 3px;
+}
+
+a:focus,
+a:hover {
+    color: white;
+}
+
+.green-date {
+    background-color: #37ef37;
+}
+
+.payment-button {
+    border: 1px solid #d5d8dc;
+    border-radius: 7px;
+    padding: 3px 10px 3px 10px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.text-info {
+    font-weight: bold;
+}
+
+.comments_card {
+    background-color: #f5f7f9;
+}
+
+.comments_div {
+    margin: -2px;
+    background-color: #48bbbe;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.my-form-style label {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-custom-select {
+    min-width: 100% !important;
+}
+
+/* create services */
+.extrachargecard {
+    border: 1px solid #b8bbbe;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.headerstyle {
+    border: 1px solid #b8bbbe;
+    background-color: #d5d8dc;
+    border-radius: 7px 7px 0px 0px;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    min-height: 50px;
+    max-height: 50px;
+    position: relative;
+}
+
+.extra_charge_input {
+    border-radius: 15px;
+    border-top: 2px solid #b8bbbe;
+    border-right: 2px solid #b8bbbe;
+    border-left: 2px solid #b8bbbe;
+    border-bottom: 1px solid #b8bbbe;
+    padding-left: 10px;
+    margin-left: 3px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+select,
+.spandiv {
+    background-color: #e6e6e6;
+}
+
+select {
+    display: block;
+    width: 100% !important;
+}
+
+.chosen_services {
+    border: 1px solid #b8bbbe;
+    background-color: #f5f4f4;
+    min-height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.invoice_div,
+.total_div {
+    border: 1px solid #b8bbbe;
+    background-color: #f9faf3;
+    padding-bottom: 10px;
+}
+
+.spandiv {
+    margin-right: 5px;
+}
+
+.total_div {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.buttons_div {
+    border: 1px solid #b8bbbe;
+    background-color: #eff5f5;
+    padding: 10px;
+    height: 50px;
+    border-radius: 0px 0px 7px 7px;
+}
+
+.service_buttons {
+    color: white;
+    height: 100%;
+    width: 70px !important;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.services_chosen {
+    background-color: #f9faf3;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.serviceinput1 {
+    border-radius: 15px;
+    border-top: 2px solid #b8bbbe;
+    border-right: 2px solid #b8bbbe;
+    border-left: 2px solid #b8bbbe;
+    border-bottom: 1px solid #b8bbbe;
+    text-align: center;
+    background-color: #e6e6e6;
+}
+
+.fa-times-circle {
+    color: #f10404;
+}
+
+hr {
+    border: 1px dashed #b8bbbe;
+}
+
+.serviceunits {
+    border-radius: 50%;
+    border-top: 2px solid #b8bbbe;
+    border-right: 2px solid #b8bbbe;
+    border-left: 2px solid #b8bbbe;
+    border-bottom: 1px solid #b8bbbe;
+    text-align: center;
+    background-color: #e6e6e6;
+}
+
+.headingserv {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.servicesasbtns {
+    border: 1px solid #b8bbbe;
+    background-color: #f5f4f4;
+    overflow-y: auto;
+    width: 100%;
+    max-height: 624px;
+    min-height: 624px;
+    border-radius: 0px 0px 7px 7px;
+    overflow-x: hidden;
+}
+
+.service_btn {
+    border: 1px solid #b8bbbe;
+    height: 70px;
+    width: 25%;
+    text-align: center;
+    padding: 25px;
+    color: black;
+}
+
+.infbtn {
+    border: 1px solid #b8bbbe;
+    font-size: 15px;
+    padding: 10px;
+    margin-right: 3px;
+}
+
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+.icon-shape {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.icon-sm {
+    width: 2rem;
+    height: 2rem;
+}
+
+.noRefundBtn[title]:hover::after {
+    content: "You must create a special annuling document first in order to refund";
+    position: absolute;
+    width: 180px;
+    border-radius: 5px;
+    font-size: 12px;
+    right: -80px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 1%;
+    line-height: 23px;
+    color: #8a5050;
+}
+
+.btndiv .payment-button {
+    border-radius: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .table-responsive {
+        overflow-x: hidden !important;
+    }
+}
+
+/* Start Reservation Page Styles */
+
+@media only print {
+
+    table.table td,
+    table.table th {
+        background-color: #fff !important;
+    }
+
+    table.table.border {
+        border: 1px solid var(--secondary) !important;
+    }
+
+    table.table .bg-secondary td,
+    table.table .bg-secondary th {
+        background-color: var(--secondary) !important;
+    }
+}
+
+.badge.badge-reservation {
+    font-size: 1rem;
+}
+
+.badge.badge-reservation.badge-new,
+.badge.badge-reservation.badge-confirmed {
+    background-color: #0b6623;
+    color: #fff;
+}
+
+.badge.badge-reservation.badge-cancelled,
+.badge.badge-reservation.badge-no-show {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.badge.badge-reservation.badge-arrived {
+    background-color: #fbc312;
+    color: #333;
+}
+
+.badge.badge-reservation.badge-offer {
+    background-color: #800080;
+    color: #fff;
+}
+
+.badge.badge-reservation.badge-checked-out {
+    background-color: #2f4f4f;
+    color: #fff;
+}
+
+.text-theme-new,
+.text-theme-confirmed {
+    color: #0b6623;
+}
+
+.text-theme-cancelled,
+.text-theme-no-show {
+    color: #ff0000;
+}
+
+.text-theme-arrived {
+    color: #fbc312;
+}
+
+.text-theme-offer {
+    color: #800080;
+}
+
+.text-theme-checked-out {
+    color: #2f4f4f;
+}
+
+.form-style-6.reservation-input {
+    font: 0.9rem Arial, Helvetica, sans-serif;
+}
+
+.table.reservation-table {
+    background-color: #fff !important;
+}
+
+.reservation-table.table-striped tbody tr:nth-of-type(2n + 1) {
+    background-color: #f5f7f9;
+}
+
+.reservation-view .infocard label {
+    color: #9ea5ae;
+}
+
+.add-guest-form .form-style-6 input[type="text"],
+.add-guest-form .form-style-6 input[type="date"],
+.add-guest-form .form-style-6 input[type="month"],
+.add-guest-form .form-style-6 input[type="datetime"],
+.add-guest-form .form-style-6 input[type="email"],
+.add-guest-form .form-style-6 input[type="number"],
+.add-guest-form .form-style-6 input[type="search"],
+.add-guest-form .form-style-6 input[type="time"],
+.add-guest-form .form-style-6 input[type="url"],
+.add-guest-form .form-style-6 input[type="password"],
+.add-guest-form .form-style-6 textarea,
+.add-guest-form .form-style-6 select {
+    max-width: 100%;
+    min-width: 150px;
+}
+
+button:disabled {
+    cursor: not-allowed !important;
+}
+
+/* End Reservation Page Styles */
