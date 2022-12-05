@@ -29,12 +29,12 @@
                      </table>
                  </div>
              
-                 <div class="col-md-7 mt-11 d-print-none form-group">
-                        <div style="float:right;" >			
+                 <div class="col-md-7 d-print-none form-group" style="margin: 10px auto;">
+                        <div style="float:right;" class="print_btn">			
                                 
-                                    <a href="javascript:if(window.print)window.print()" class="  " style='background-color:black;padding:2px 12px;color:white;border-radius:2px;'>
-                                            <span class="navi-icon">
-                                                <i class="fa fa-print" style="color:white !important;"></i>
+                                    <a href="javascript:if(window.print)window.print()" >
+                                            <span class="navi-icon mr-2">
+                                                <i class="fa fa-print"></i>
                                             </span>
                                             <span class="" >Print</span>
                                      </a>

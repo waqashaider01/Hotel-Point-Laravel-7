@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-<script>
+{{-- <script>
     
 $('input[name="dates"]').daterangepicker();
 </script>
@@ -8,7 +8,7 @@ $('input[name="dates"]').daterangepicker();
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-    <div>
+    <div> --}}
         <x-table title='Reservation List' tableClasses="table reservation-table table-striped table-bordered">
             <x-slot name="header">
                 <div class="row">
@@ -65,10 +65,13 @@ $('input[name="dates"]').daterangepicker();
                             <table>
                                 <tbody>
                                     <tr>
+                                        <td>
                                         <input type="hidden" name="from_date"
                                             value="{{ request()->query('from_date', null) }}">
                                         <input type="hidden" name="to_date"
                                             value="{{ request()->query('to_date', null) }}">
+                                            </td>
+                                            
                                         <td class="align-middle">
                                             <div class="form-style-6 reservation-input my-0 p-0">
                                                 <select name="status" class="mb-0 all_filter_field" style="min-width: 150px;">

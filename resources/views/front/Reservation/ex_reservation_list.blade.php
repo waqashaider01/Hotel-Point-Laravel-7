@@ -22,16 +22,15 @@
                             <div class="d-print-none" style="float:left;margin-top:2%;">
                                 <input type="file" name="reservations" id="file" accept=".xls, .xlsx"
                                     onchange="uploadFile();" hidden>
-                                <button type="button" id="importbtn" name='import' class=""
-                                    style='background-color:#48BD91;border:none !important;padding:2px 12px;color:white;border-radius:2px;margin-bottom:5px;'
+                                <button type="button" id="importbtn" name='import' class="filter_btn"
+                                    
                                     onclick="file.click()">
-                                    <i class="fa fa-upload text-light" aria-hidden="true"></i>
+                                    <i class="fa fa-upload text-light print_icon mr-2" aria-hidden="true"></i>
                                     Upload
                                 </button>
-                                <button name='addnew' id="addnew" type="button" data-toggle="modal"
+                                <button name='addnew' id="addnew" type="button" data-toggle="modal" class="filter_btn"
                                     data-target="#addBookingModal"
-                                    style='background-color:#48BD91;border:none !important;padding:2px 12px;color:white;border-radius:2px;margin-bottom:5px;'
-                                    class=""><i class="fa fa-plus text-light" aria-hidden="true"></i>&nbsp;
+                                    class=""><i class="fa fa-plus text-light print_icon mr-1" aria-hidden="true"></i>&nbsp;
                                     Booking
                                 </button>
                             </div>
@@ -42,11 +41,17 @@
                             document.getElementById('importForm').submit();
                         }
                     </script>
-                    <div class="col-md-2">
-                        <a href="javascript:if(window.print)window.print()" type="button"
-                            class="float-right btn btn-primary m-3">
-                            <i class="fa fa-print"></i> Print
-                        </a>
+                    <div class="col-md-2 ">
+                       <div style="float:right; " class="print_btn">			
+                                
+                                    <a href="javascript:if(window.print)window.print()" class="">
+                                            <span class="navi-icon mr-2">
+                                                <i class="fa fa-print"></i>
+                                            </span>
+                                            <span class="" >Print</span>
+                                     </a>
+                                    
+                        </div>
                     </div>
                 </div>
             </x-slot>

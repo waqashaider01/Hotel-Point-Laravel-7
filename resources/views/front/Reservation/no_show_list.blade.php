@@ -25,7 +25,7 @@
                                     </td>
                                     <td class="align-middle">
                                         <div class="d-print-none pl-2">
-                                            <button type="submit" class="btn btn-success rounded-0">
+                                            <button type="submit" class="rounded-0 run_btn2" >
                                                 Run
                                             </button>
                                         </div>
@@ -47,10 +47,16 @@
                         </form>
                     </div>
                     <div class="col-md-2">
-                        <a href="javascript:if(window.print)window.print()" type="button"
-                           class="float-right btn btn-primary m-3">
-                            <i class="fa fa-print"></i>Print
-                        </a>
+                        <div style="float:right; " class="print_btn">			
+                                
+                                    <a href="javascript:if(window.print)window.print()" class="">
+                                            <span class="navi-icon mr-2">
+                                                <i class="fa fa-print"></i>
+                                            </span>
+                                            <span class="" >Print</span>
+                                     </a>
+                                    
+                        </div>
                     </div>
                 </div>
             </x-slot>

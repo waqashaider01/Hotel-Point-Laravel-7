@@ -88560,7 +88560,36 @@ body {
     background: transparent !important;
     border-radius: 0.42rem !important;
     color: black !important;
-    border-color: #1BC5BD !important;
+    border: 1px solid #1BC5BD !important;
+    padding: 0.65rem 1rem !important;
+}
+
+.run_btn {
+    background: transparent !important;
+    border-radius: 0.42rem !important;
+    color: black !important;
+    border: 1px solid #1BC5BD !important;
+    padding: 0.90rem 1rem;
+    margin-top: -10px;
+}
+
+.run_btn2 {
+    background: transparent !important;
+    border-radius: 0.42rem !important;
+    color: black !important;
+    border: 1px solid #1BC5BD !important;
+    padding: 0.75rem 1rem;
+    margin-top: -10px;
+}
+
+.run_btn:hover {
+    background-color: #1BC5BD !important;
+    color: white !important;
+}
+
+.run_btn2:hover {
+    background-color: #1BC5BD !important;
+    color: white !important;
 }
 
 .filter_btn:focus {
@@ -88594,4 +88623,36 @@ body {
 
     background-color: #1BC5BD !important;
 
+}
+
+
+
+
+
+.print_btn {
+    background: transparent !important;
+    border-radius: 0.42rem !important;
+    border: 1px solid #1BC5BD !important;
+    padding: 0.65rem 1rem;
+}
+
+.print_btn:hover {
+    background: #1BC5BD !important;
+
+}
+
+.print_btn a span i {
+    color: #1BC5BD !important;
+}
+
+.print_btn:hover a span i {
+    color: white !important;
+}
+
+.print_btn a span {
+    color: black;
+}
+
+.print_btn:hover a span {
+    color: white;
 }

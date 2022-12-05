@@ -13,7 +13,7 @@
                   <div class='col-md-10'>
 			         <table>
                            <tr>
-                                <td>
+                                {{-- <td>
                                     <div class="form-style-6" style="" >
                                         <input type="date"  id="from_date" value="{{$startDate}}"/>
                                      </div>
@@ -27,10 +27,15 @@
                                     <div class="form-style-6" style="" >
                                         <input type="date"  id="to_date" value="{{$endDate}}" />
                                      </div>
-                                </td>
+                                </td> --}}
                                 <td>
+                                
+                  <input type="text" style="margin-top: -10px" name="daterange" class="custom_date_style" value="01/01/2018 - 01/15/2018" />
+                                   </td>
+                                <td>
+                                
                                     <div class="form-style-6" style="" >
-                                            <select id="roomtype">
+                                            <select id="roomtype " class="all_filter_field">
                                                     <option value="all">All</option>
                                                     @foreach($roomtypeCollection as $roomtype)
                                                       <option value="{{$roomtype->id}}">{{$roomtype->name}}</option>
@@ -40,7 +45,7 @@
                                 </td>
                                 <td>
                                     <div class=" d-print-none  form-style-6" style="" >		
-                                            <button type="button" id="submit"  style='background-color:#48BD91;border:none !important;padding:2px 12px;color:white;border-radius:2px;'>Run</button>
+                                            <button type="button" id="submit"  class="run_btn">Run</button>
                                             
                                     </div>
                                 </td>
@@ -48,12 +53,12 @@
                      </table>
                  </div>
              
-                 <div class="col-md-2 mt-11 d-print-none form-group">
-                        <div style="float:right;" >			
+                <div class="col-md-2 d-print-none form-group" style="margin: 10px auto;">
+                        <div style="float:right; " class="print_btn">			
                                 
-                                    <a href="javascript:if(window.print)window.print()" class="  " style='background-color:black;padding:2px 12px;color:white;border-radius:2px;'>
-                                            <span class="navi-icon">
-                                                <i class="fa fa-print" style="color:white !important;"></i>
+                                    <a href="javascript:if(window.print)window.print()" class="">
+                                            <span class="navi-icon mr-2">
+                                                <i class="fa fa-print"></i>
                                             </span>
                                             <span class="" >Print</span>
                                      </a>
@@ -218,7 +223,16 @@ function updateChart(){
 
 
 
+</script>
 
+ <script>
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'right'
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
 </script>
 
 
